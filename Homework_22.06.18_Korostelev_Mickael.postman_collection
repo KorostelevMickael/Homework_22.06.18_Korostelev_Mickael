@@ -1,0 +1,2807 @@
+{
+	"info": {
+		"_postman_id": "cc9cfc82-0c17-4513-a48d-75650d174bf6",
+		"name": "Homework 22.06.18",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "By city name",
+			"description": "",
+			"item": [
+				{
+					"name": "Weather by name \"Kyiv\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=Kyiv&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Kyiv"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by wrong name \"Kiov\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=Kyov&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Kyov"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name no name",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": ""
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name \"1\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=1&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "1"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name \"kyiv\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=kyiv&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "kyiv"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name&country \"Kyiv,ua\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=Kyiv,ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Kyiv,ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name&country \"Kyov,ua\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=Kyov,ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Kyov,ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by wrong name&country \"Kyiv,ru\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=Kyiv,ru&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "Kyiv,ru"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name without name, country ua",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name&country symbol",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=,&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": ","
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by name&country \"Kyiv,12\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?q=kyiv,12&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "q",
+									"value": "kyiv,12"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "By city ID",
+			"description": "",
+			"item": [
+				{
+					"name": "Weather by city Id \"2172797\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?id=2172797&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "2172797"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by city Id \"-2172797\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?id=-2172797&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-2172797"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by city Id \"0\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?id=0&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "0"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by city Id \"9999999\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?id=999999999999&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "999999999999"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by city Id no Id",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?id=&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": ""
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "By geographic coordinates",
+			"description": "",
+			"item": [
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44,41 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44,41&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44,41"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon 33,73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=33,73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "33,73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon 179\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=179&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "179"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon 180\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=180&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "180"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon 181\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=181&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "181"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon -179\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=-179&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "-179"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon -180\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=-180&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "-180"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon -181\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=-181&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "-181"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat -89 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=-89&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-89"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat -90 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=-90&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-90"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat -91 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=-91&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "-91"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 91 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=91&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "91"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 90 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=90&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "90"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 89 Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=89&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "89"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41 Lon Laspi\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&lon=Laspi&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "lon",
+									"value": "Laspi"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat Laspi Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=Laspi&lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "Laspi"
+								},
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \" Lon 33.73\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lon=33.73&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lon",
+									"value": "33.73"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by geographic coordinates \"Lat 44.41\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?lat=44.41&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "44.41"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "By ZIP code",
+			"description": "",
+			"item": [
+				{
+					"name": "Weather by ZIP code \"04112,ua\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=04112,ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "04112,ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"04112,ru\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=04112,ru&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "04112,ru"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"940400,ua\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=940400,ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "940400,ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"ua\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"04112\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=04112&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "04112"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"abcde,ua\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=abcde,ua&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "abcde,ua"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"04112,38\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=04112,38&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "04112,38"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Weather by ZIP code \"04112,ukr\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/weather?zip=04112,ukr&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"weather"
+							],
+							"query": [
+								{
+									"key": "zip",
+									"value": "04112,ukr"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities within a rectangle zone",
+			"description": "",
+			"item": [
+				{
+					"name": "Cities within a rectangle zone \"13,18,43,15,71\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=13,18,43,15,71&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"box",
+								"city"
+							],
+							"query": [
+								{
+									"key": "bbox",
+									"value": "13,18,43,15,71"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities within a rectangle zone \"-13,-18,43,15,71\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=-13,-18,43,15,71&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"box",
+								"city"
+							],
+							"query": [
+								{
+									"key": "bbox",
+									"value": "-13,-18,43,15,71"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities within a rectangle zone \"13,18,3\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=13,18,3&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"box",
+								"city"
+							],
+							"query": [
+								{
+									"key": "bbox",
+									"value": "13,18,3"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities within a rectangle zone \"ua,-18,43,15,71\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=ua,-18,43,15,71&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"box",
+								"city"
+							],
+							"query": [
+								{
+									"key": "bbox",
+									"value": "ua,-18,43,15,71"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities within a rectangle zone language ru",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/box/city?bbox=13,-18,43,15,71&lang=ru&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"box",
+								"city"
+							],
+							"query": [
+								{
+									"key": "bbox",
+									"value": "13,-18,43,15,71"
+								},
+								{
+									"key": "lang",
+									"value": "ru"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Cities in cycle",
+			"description": "",
+			"item": [
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt=10\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=10&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": "10"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt=11\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=11&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": "11"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt=49\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=49&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": "49"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt=50\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=50&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": "50"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt=9\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=9&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": "9"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": null
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Cities in cycle \"lat=55.5 on=37.5 cnt=51\"",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/find?lat=55.5&lon=37.5&cnt=51&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"find"
+							],
+							"query": [
+								{
+									"key": "lat",
+									"value": "55.5"
+								},
+								{
+									"key": "lon",
+									"value": "37.5"
+								},
+								{
+									"key": "cnt",
+									"value": "51"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Call for several city IDs",
+			"description": "",
+			"item": [
+				{
+					"name": "Call for several city IDs \"703363,128324,3632308\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/group?id=703363,128324,3632308&units=metric&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"group"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "703363,128324,3632308"
+								},
+								{
+									"key": "units",
+									"value": "metric"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call for several city IDs \"-703363,128324,3632308\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/group?id=-703363,128324,3632308&units=metric&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"group"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "-703363,128324,3632308"
+								},
+								{
+									"key": "units",
+									"value": "metric"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call for several city IDs \"703363.128324,3632308\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/group?id=703363.128324,3632308&units=metric&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"group"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "703363.128324,3632308"
+								},
+								{
+									"key": "units",
+									"value": "metric"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Call for several city IDs \"Laspi,128324,3632308\"",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "APPID",
+								"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {},
+						"url": {
+							"raw": "http://api.openweathermap.org/data/2.5/group?id=Laspi,128324,3632308&units=metric&id=524901&APPID=e2471f1fc5e97e9fcdf466a1b17a6276",
+							"protocol": "http",
+							"host": [
+								"api",
+								"openweathermap",
+								"org"
+							],
+							"path": [
+								"data",
+								"2.5",
+								"group"
+							],
+							"query": [
+								{
+									"key": "id",
+									"value": "Laspi,128324,3632308"
+								},
+								{
+									"key": "units",
+									"value": "metric"
+								},
+								{
+									"key": "id",
+									"value": "524901"
+								},
+								{
+									"key": "APPID",
+									"value": "e2471f1fc5e97e9fcdf466a1b17a6276"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
